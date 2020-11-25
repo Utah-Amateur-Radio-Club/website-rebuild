@@ -1,4 +1,4 @@
-baseURL = "https://mr-cade.github.io/uarc-rebuild/"
+baseURL = "https://utah-amateur-radio-club.github.io/website-rebuild/"
 languageCode = "en-us"
 title = "UARC"
 theme = "ananke"
@@ -126,4 +126,9 @@ enableRobotsTXT = true
       url = "/books"
       parent = "shop"
       weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "Meeting Information"
+    url = "/posts"
+    
     
