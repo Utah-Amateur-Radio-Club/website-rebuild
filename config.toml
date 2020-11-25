@@ -1,0 +1,129 @@
+baseURL = "https://mr-cade.github.io/uarc-rebuild/"
+languageCode = "en-us"
+title = "UARC"
+theme = "ananke"
+publishDir = "docs"
+
+DefaultContentLanguage = "en"
+
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  favicon = "/images/favicon.ico"
+  site_logo = ""
+  description = "Utah Amateur Radio Club"
+  facebook = "https://www.facebook.com/UtahAmateurRadioClub/"
+  twitter = ""
+  instagram = ""
+  youtube = "https://www.youtube.com/c/utahamateurradioclub"
+  github = ""
+  gitlab = ""
+  linkedin = ""
+  mastodon = ""
+  slack = ""
+  stackoverflow = ""
+  rss = ""
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+  featured_image = "/images/Antenna-Farm.jpg"
+  recent_posts_number = 2
+  custom_css = ["css/custom.css"]
+
+# Menu Structure ======================================================
+
+# ***** change section pages menu back to uncommented and remove below menu config to revert to default auto menu populating
+# SectionPagesMenu = "main"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    weight = 1
+    [[menu.main]]
+      identifier = "joining"
+      name = "How to Join"
+      url = "/joining"
+      parent = "about"
+      weight = 1
+    [[menu.main]]
+      identifier = "mtgLocation"
+      name = "Meeting Location"
+      url = "/mtgLocation"
+      parent = "about"
+      weight = 1
+    [[menu.main]]
+      identifier = "posts"
+      name = "Meeting Schedule"
+      url = "/posts"
+      parent = "about"
+      weight = 1
+    [[menu.main]]
+      identifier = "byLaws"
+      name = "By-Laws"
+      url = "/by-laws"
+      parent = "about"
+      weight = 1
+    [[menu.main]]
+      identifier = "atv"
+      name = "Amateur Television"
+      url = "/atv"
+      parent = "about"
+      weight = 1
+  [[menu.main]]
+    identifier = "benefits"
+    name = "Benefits"
+    weight = 1
+    [[menu.main]]
+      identifier = "repeaters"
+      name = "UARC Repeaters"
+      url = "/uarc-repeaters"
+      parent = "benefits"
+      weight = 1
+    [[menu.main]]
+      identifier = "UTrepeaters"
+      name = "Utah Repeaters"
+      url = "/utah-repeaters"
+      parent = "benefits"
+      weight = 1
+    [[menu.main]]
+      identifier = "bookLending"
+      name = "ARRL Book Lending"
+      url = "/lending"
+      parent = "benefits"
+      weight = 1
+    [[menu.main]]
+      identifier = "irlp"
+      name = "IRLP"
+      url = "/irlp"
+      parent = "benefits"
+      weight = 1
+    [[menu.main]]
+      identifier = "remote"
+      name = "Remote"
+      url = "/remote"
+      parent = "benefits"
+      weight = 1
+    [[menu.main]]
+      identifier = "elmers"
+      name = "Elmers"
+      url = "/elmers"
+      parent = "benefits"
+      weight = 1
+  [[menu.main]]
+    identifier = "shop"
+    name = "Shop"
+    weight = 1
+    [[menu.main]]
+      identifier = "books"
+      name = "Books"
+      url = "/books"
+      parent = "shop"
+      weight = 1
+    
